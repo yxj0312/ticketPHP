@@ -36,3 +36,4 @@ CREATE TABLE `post` (
 ```
 
 #### Create some records within
+#### Create two models in the Models folder
