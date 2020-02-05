@@ -13,7 +13,7 @@ use less package, but realize almost all the features. This didn't use autoload.
 
 ### Create a DB names 'blog'
 
-By using some MyPHPAdmin or some DB client like HeidiSQL:
+Creating a database by using phpMyAdmin or some DB client like HeidiSQL:
 
 ```mysql
 
