@@ -31,5 +31,8 @@ CREATE TABLE `post` (
 	`body` TEXT NOT NULL,
 	`author_id` INT(10) NOT NULL,
 	`created_at` DATETIME NOT NULL
+    PRIMARY KEY (`id`)
 )
 ```
+
+#### Create some records within
