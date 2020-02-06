@@ -36,4 +36,6 @@ CREATE TABLE `post` (
 ```
 
 #### Create some records within
-#### Create two models in the Models folder
+#### Create an abstract class within the models folder, called model.php
+#### Extend two models post.php and user.php in the Models folder
+
