@@ -17,6 +17,7 @@ abstract class Model
     {
         $this->connectionParam = $appConfig['connection']['params'];
 
+        $this->db = mysqli_connect($this->connectionParam['host'], $this->connectionParam['user'], $this->connectionParam['password'], $this->connectionParam['dbname']);
 
     }
 }
