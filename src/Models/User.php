@@ -18,11 +18,17 @@ class User extends Model {
 
         $query = sprintf($query, $this->db->real_escape_string($email), $this->db->real_escape_string($password));
 
-        var_dump($query);
-
         if ($result = $this->db->query($query)) {
             $row = $result->fetch_assoc();
-            var_dump($row);
-        }
+            if (!$row) return false;
+            $user = array(
+                'id' => $row['id'],
+                'email' => $row['email'],
+                'name' => $row['name']
+            );
+            $result->close();
+        } else
+            die($this->db->error);
+        return $user;
     }
 }

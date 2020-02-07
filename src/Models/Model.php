@@ -14,8 +14,6 @@ abstract class Model
 
     protected $db;
 
-    abstract protected function getModel($attributes);
-
     public function __construct($appConfig = null)
     {
         $this->connectionParam = $appConfig['connection']['params'];

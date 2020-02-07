@@ -11,11 +11,9 @@ use less package, but realize almost all the features. This didn't use autoload.
 
 ## Let's create a blog system from scratch.
 
-### Create a DB names 'blog'
+- Create a DB names 'blog' by creating a database by using phpMyAdmin or some DB client like HeidiSQL:
 
-Creating a database by using phpMyAdmin or some DB client like HeidiSQL:
-
-#### Add two tables: user and post
+- Add two tables: user and post
 ```mysql
 CREATE TABLE `user` (
 	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -23,7 +21,7 @@ CREATE TABLE `user` (
 	`name` VARCHAR(255) NOT NULL,
 	`password` VARCHAR(255) NOT NULL,
 	PRIMARY KEY (`id`)
-)
+);
 
 CREATE TABLE `post` (
 	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -35,7 +33,8 @@ CREATE TABLE `post` (
 )
 ```
 
-#### Create some records within
-#### Create an abstract class within the models folder, called model.php
-#### Extend two models post.php and user.php in the Models folder
+- Create some records within
+- Create an abstract class within the models folder, called model.php
+- Extend two models post.php and user.php in the Models folder
+- Create a getUser() method in the User.php with parameter $email and $password
 

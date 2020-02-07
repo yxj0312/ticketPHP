@@ -10,6 +10,6 @@ use ticketPHP\Models\User;
 
 $appconfig = require __DIR__ .'/../config/application.config.php';
 $user = new User($appconfig);
-$user->getUser('ssrocyxj@gmail.com', '123456');
+print_r($user->getUser('ssrocyxj@gmail.com', '123456'));
 
 
