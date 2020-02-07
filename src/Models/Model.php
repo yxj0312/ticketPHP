@@ -1,5 +1,6 @@
 <?php
 
+namespace ticketPHP\Models;
 
 abstract class Model
 {
@@ -12,6 +13,8 @@ abstract class Model
     ];
 
     protected $db;
+
+    abstract protected function getModel($attributes);
 
     public function __construct($appConfig = null)
     {
