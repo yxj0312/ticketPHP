@@ -37,4 +37,7 @@ CREATE TABLE `post` (
 - Create an abstract class within the models folder, called model.php
 - Extend two models post.php and user.php in the Models folder
 - Create a getUser() method in the User.php with parameter $email and $password
+- Create a UserController in the Controllers folder
+- Could write a interface named controller
+- Could write a abstract class for relative dependency injections.
 
