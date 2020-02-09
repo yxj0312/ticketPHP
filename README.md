@@ -40,4 +40,5 @@ CREATE TABLE `post` (
 - Create a UserController in the Controllers folder
 - Could write a interface named controller
 - Could write a abstract class for relative dependency injections.
+- Install a Template engine, like twig, so we can render the view much easier.
 
